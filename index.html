@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Nouns - تعلم الإنجليزية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Tajawal', sans-serif; 
+            background-color: #e5e7eb; /* رمادي فاتح للخلفية خارج التطبيق */
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        
+        /* حاوية تحاكي شاشة الهاتف */
+        .app-container { 
+            width: 100%; 
+            max-width: 400px; 
+            height: 100vh; 
+            max-height: 850px; 
+            background-color: #f8fafc; 
+            display: flex;
+            flex-direction: column;
+            position: relative; 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        /* على شاشات الهاتف الحقيقية، يأخذ التطبيق كامل الشاشة */
+        @media (max-width: 400px) {
+            .app-container { max-height: 100vh; border-radius: 0; }
+        }
+
+        /* إخفاء شريط التمرير */
+        .scrollable-content::-webkit-scrollbar { display: none; }
+        .scrollable-content { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    
+    <!-- 1. الشريط العلوي (Header) - ثابت -->
+    <header class="bg-blue-600 text-white px-4 py-4 flex justify-between items-center shadow-md z-10 flex-none">
+        <i class="fas fa-bars text-xl cursor-pointer"></i>
+        <h1 class="text-xl font-bold flex items-center gap-2">
+            <i class="fas fa-graduation-cap"></i> My Nouns
+        </h1>
+        <div class="w-6"></div> <!-- مساحة فارغة للتوازن -->
+    </header>
+
+    <!-- 2. منطقة المحتوى - قابلة للتمرير -->
+    <main class="flex-1 overflow-y-auto scrollable-content p-4 pb-6">
+        
+        <!-- شريط البحث -->
+        <div class="relative mb-4">
+            <i class="fas fa-search absolute right-3 top-3.5 text-gray-400"></i>
+            <input type="text" placeholder="ابحث عن كلمة بالإنجليزية أو العربية..." 
+                   class="w-full bg-gray-100 border-none rounded-xl py-3 pr-10 pl-4 text-sm focus:ring-2 focus:ring-blue-500 outline-none text-right">
+        </div>
+
+        <!-- التبويبات (Tabs) -->
+        <div class="flex gap-2 mb-5">
+            <button class="flex-1 bg-blue-600 text-white py-2.5 rounded-xl text-sm font-bold flex justify-center items-center gap-2 shadow-sm">
+                <i class="fas fa-heart"></i> الكل
+            </button>
+            <button class="flex-1 bg-gray-100 text-gray-600 py-2.5 rounded-xl text-sm font-bold flex justify-center items-center gap-2 hover:bg-gray-200 transition">
+                <i class="far fa-heart"></i> المفضلة
+            </button>
+        </div>
+
+        <!-- قائمة الكلمات -->
+        <div class="space-y-3">
+            
+            <!-- كلمة 1: House -->
+            <div class="flex items-center justify-between bg-white p-3 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3">
+                    <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-3xl">🏠</div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-gray-800 text-lg">House</h3>
+                        <p class="text-sm text-gray-500">منزل</p>
+                        <p class="text-xs text-blue-500 font-mono mt-0.5">/haʊs/</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-gray-400 px-2">
+                    <button class="hover:text-blue-500 transition"><i class="fas fa-volume-up text-lg"></i></button>
+                    <button class="hover:text-red-500 transition"><i class="far fa-heart text-xl"></i></button>
+                </div>
+            </div>
+
+            <!-- كلمة 2: Car -->
+            <div class="flex items-center justify-between bg-white p-3 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3">
+                    <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-3xl">🚗</div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-gray-800 text-lg">Car</h3>
+                        <p class="text-sm text-gray-500">سيارة</p>
+                        <p class="text-xs text-blue-500 font-mono mt-0.5">/kɑːr/</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-gray-400 px-2">
+                    <button class="hover:text-blue-500 transition"><i class="fas fa-volume-up text-lg"></i></button>
+                    <button class="hover:text-red-500 transition"><i class="far fa-heart text-xl"></i></button>
+                </div>
+            </div>
+
+            <!-- كلمة 3: Book -->
+            <div class="flex items-center justify-between bg-white p-3 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-3xl">📖</div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-gray-800 text-lg">Book</h3>
+                        <p class="text-sm text-gray-500">كتاب</p>
+                        <p class="text-xs text-blue-500 font-mono mt-0.5">/bʊk/</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-gray-400 px-2">
+                    <button class="hover:text-blue-500 transition"><i class="fas fa-volume-up text-lg"></i></button>
+                    <button class="hover:text-red-500 transition"><i class="far fa-heart text-xl"></i></button>
+                </div>
+            </div>
+
+            <!-- كلمة 4: Phone -->
+            <div class="flex items-center justify-between bg-white p-3 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-3">
+                    <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center text-3xl">📱</div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-gray-800 text-lg">Phone</h3>
+                        <p class="text-sm text-gray-500">هاتف</p>
+                        <p class="text-xs text-blue-500 font-mono mt-0.5">/foʊn/</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-gray-400 px-2">
+                    <button class="hover:text-blue-500 transition"><i class="fas fa-volume-up text-lg"></i></button>
+                    <button class="hover:text-red-500 transition"><i class="far fa-heart text-xl"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 3. شريط التنقل السفلي (Bottom Nav) - ثابت في الأسفل -->
+    <nav class="flex-none bg-white border-t border-gray-100 flex justify-around py-3 text-xs text-gray-400 pb-5">
+        <a href="#" class="flex flex-col items-center text-blue-600 gap-1">
+            <i class="fas fa-home text-xl"></i> 
+            <span class="font-bold">الرئيسية</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 gap-1 transition">
+            <i class="fas fa-search text-xl"></i> 
+            <span>بحث</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 gap-1 transition">
+            <i class="far fa-heart text-xl"></i> 
+            <span>المفضلة</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 gap-1 transition">
+            <i class="fas fa-cog text-xl"></i> 
+            <span>الإعدادات</span>
+        </a>
+    </nav>
+
+</div>
+
+</body>
+  </html>
