@@ -1,27 +1,220 @@
+```html
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Nouns</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}body{background:#F5F6FA;color:#1F2937;min-height:100vh}.dark body{background:#0F172A;color:#F1F5F9}.dark{--bg:#1E293B;--tx2:#94A3B8;--bd:#334155}body{--bg:#FFF;--tx2:#6B7280;--bd:#E5E7EB}.top{background:linear-gradient(135deg,#4F46E5,#7C3AED);color:#fff;padding:16px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:10}.top h1{flex:1;font-size:17px;font-weight:800;text-align:center}.top button{background:rgba(255,255,255,.2);border:0;color:#fff;width:38px;height:38px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer}.wrap{padding:16px;padding-bottom:90px;max-width:600px;margin:0 auto}.card{background:var(--bg);border-radius:20px;padding:20px;margin-bottom:14px;box-shadow:0 4px 16px rgba(0,0,0,.08)}.hero{background:linear-gradient(135deg,#4F46E5,#7C3AED);color:#fff;border-radius:20px;padding:20px;margin-bottom:14px;text-align:center}.hero h2{font-size:20px;margin-bottom:4px}.hero p{font-size:13px;opacity:.9}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}.stat{background:var(--bg);border-radius:14px;padding:12px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.06)}.stat b{display:block;font-size:22px;color:#4F46E5;font-weight:800}.stat span{font-size:11px;color:var(--tx2)}.progress{height:10px;background:var(--bd);border-radius:5px;overflow:hidden;margin-top:8px}.progress>div{height:100%;background:linear-gradient(90deg,#4F46E5,#7C3AED);transition:width .4s}.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 16px;border:0;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;transition:transform .15s}.btn:active{transform:scale(.96)}.btn-p{background:linear-gradient(135deg,#4F46E5,#7C3AED);color:#fff;width:100%}.btn-g{background:var(--bd);color:inherit}.btn-s{background:#10B981;color:#fff}.btn-w{background:#F59E0B;color:#fff}.btn-o{background:var(--bg);border:2px solid var(--bd);color:inherit}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}.big{padding:20px 12px;text-align:center;font-size:13px;font-weight:700}.big .ico{font-size:28px;display:block;margin-bottom:4px}.big .ttl{font-size:12px}.emoji{font-size:120px;text-align:center;padding:30px 0;background:linear-gradient(135deg,#E0E7FF,#C7D2FE);border-radius:20px 20px 0 0}.dark .emoji{background:linear-gradient(135deg,#312E81,#4C1D95)}.wen{font-size:32px;font-weight:800;color:#4F46E5;text-align:center;direction:ltr;margin:16px 0 4px}.war{font-size:22px;font-weight:700;text-align:center;margin-bottom:12px}.ex{background:rgba(0,0,0,.04);padding:12px;border-radius:10px;font-style:italic;font-size:13px;direction:ltr;margin:8px 0}.dark .ex{background:rgba(255,255,255,.05)}.chipline{display:flex;gap:6px;justify-content:center;margin-bottom:10px;flex-wrap:wrap}.chip{padding:4px 10px;border-radius:20px;background:var(--bd);font-size:11px;font-weight:700}.row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1}.search{width:100%;padding:12px 14px;border:2px solid var(--bd);border-radius:12px;font-size:15px;background:var(--bg);color:inherit;font-family:inherit;outline:none;margin-bottom:12px}.item{background:var(--bg);border-radius:12px;padding:12px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.05)}.item .em{font-size:30px}.item .inf{flex:1}.item .inf .e{font-size:15px;font-weight:700;direction:ltr;text-align:start}.item .inf .a{font-size:12px;color:var(--tx2)}.nav{position:fixed;bottom:0;left:0;right:0;background:var(--bg);border-top:1px solid var(--bd);display:flex;z-index:20;max-width:600px;margin:0 auto;left:50%;transform:translateX(-50%)}.nav button{flex:1;background:0;border:0;padding:8px 0;color:var(--tx2);font-size:10px;font-weight:700;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;font-family:inherit}.nav button.on{color:#4F46E5}.nav .ic{font-size:20px}.hide{display:none!important}.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(100px);background:#1F2937;color:#fff;padding:10px 18px;border-radius:12px;font-size:13px;font-weight:600;z-index:100;opacity:0;transition:.3s}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.toast.ok{background:#10B981}.toast.bad{background:#EF4444}</style></head><body><div class="top"><button id="lg">EN</button><h1>📚 My Nouns</h1><button id="th">🌙</button></div><div id="wrap" class="wrap"><section id="home"><div class="hero"><h2 id="ht">📚 My Nouns</h2><p id="hs">تعلم الأسماء الإنجليزية</p></div><div class="stats"><div class="stat"><b id="s1">0</b><span id="l1">الكل</span></div><div class="stat"><b id="s2">0</b><span id="l2">تعلمت</span></div><div class="stat"><b id="s3">0</b><span id="l3">محفوظة</span></div></div><div class="card"><div style="display:flex;justify-content:space-between;font-size:13px;font-weight:700"><span id="pl">التقدم</span><span id="pc">0%</span></div><div class="progress"><div id="pf" style="width:0%"></div></div><div style="font-size:12px;color:var(--tx2);margin-top:6px;text-align:center" id="pt">0 / 0</div></div><div class="grid2"><button class="btn btn-p big" onclick="learn()"><span class="ico">📖</span><span class="ttl" id="b1">ابدأ التعلم</span></button><button class="btn btn-p big" onclick="go('search')"><span class="ico">🔍</span><span class="ttl" id="b2">بحث</span></button></div></section><section id="learn" class="hide"><div id="lempty" class="hide" style="text-align:center;padding:40px"><div style="font-size:50px">🎉</div><p id="le">أكملت جميع الكلمات!</p></div><div id="lbody"><div class="card" style="padding:0;overflow:hidden"><div class="emoji" id="le2">📖</div><div style="padding:20px"><div class="wen" id="lw">book</div><div class="war" id="la">كتاب</div><div class="chipline"><span class="chip" id="lc">School</span><span class="chip" id="ll">L1</span></div><button class="btn btn-p" onclick="sL()" style="margin-bottom:10px">🔊 <span id="ls">استمع</span></button><div class="ex" id="lx"></div></div></div><div class="grid3"><button class="btn btn-s" onclick="mark('learned')">✓ <span id="mk1">أعرفها</span></button><button class="btn btn-w" onclick="mark('review')">↻ <span id="mk2">راجعها</span></button><button class="btn btn-o" onclick="nw()">→ <span id="mk3">التالي</span></button></div><div class="row"><button class="btn btn-g" id="sb" onclick="tS()">⭐ <span id="mv">حفظ</span></button><button class="btn btn-g" onclick="sL()">🔊 <span id="mp">نطق</span></button></div></div></section><section id="saved" class="hide"><h2 style="margin-bottom:12px">⭐ <span id="ts">الكلمات المحفوظة</span></h2><div id="sl"></div></section><section id="progress" class="hide"><h2 style="margin-bottom:12px">📊 <span id="tp">التقدم</span></h2><div id="pr"></div></section><section id="search" class="hide"><h2 style="margin-bottom:12px">🔍 <span id="tse">بحث</span></h2><input class="search" id="sq" placeholder="ابحث..." oninput="dS()"><div id="sr"></div></section></div><nav class="nav"><button class="on" data-s="home" onclick="go('home')"><span class="ic">🏠</span><span id="nh">الرئيسية</span></button><button data-s="learn" onclick="learn()"><span class="ic">📖</span><span id="nl">تعلم</span></button><button data-s="saved" onclick="go('saved')"><span class="ic">⭐</span><span id="nv">محفوظة</span></button><button data-s="progress" onclick="go('progress')"><span class="ic">📊</span><span id="np">تقدمي</span></button></nav><div class="toast" id="toast"></div><script>
-var W=[["man","رجل","People","👨"],["woman","امرأة","People","👩"],["boy","ولد","People","👦"],["girl","بنت","People","👧"],["baby","طفل","People","👶"],["father","أب","People","👨"],["mother","أم","People","👩"],["brother","أخ","People","🧑"],["sister","أخت","People","👧"],["friend","صديق","People","👫"],["head","رأس","Body","🧠"],["eye","عين","Body","👁️"],["hand","يد","Body","✋"],["heart","قلب","Body","❤️"],["house","منزل","Home","🏠"],["door","باب","Home","🚪"],["window","نافذة","Home","🪟"],["key","مفتاح","Home","🔑"],["table","طاولة","Furniture","🪑"],["chair","كرسي","Furniture","💺"],["bed","سرير","Furniture","🛏️"],["lamp","مصباح","Furniture","💡"],["shirt","قميص","Clothes","👕"],["shoes","أحذية","Clothes","👟"],["hat","قبعة","Clothes","🎩"],["apple","تفاحة","Food","🍎"],["banana","موزة","Food","🍌"],["bread","خبز","Food","🍞"],["water","ماء","Drinks","💧"],["coffee","قهوة","Drinks","☕"],["dog","كلب","Animals","🐕"],["cat","قطة","Animals","🐈"],["lion","أسد","Animals","🦁"],["sun","شمس","Nature","☀️"],["moon","قمر","Nature","🌙"],["tree","شجرة","Nature","🌳"],["flower","زهرة","Nature","🌸"],["city","مدينة","Places","🏙️"],["park","حديقة","Places","🏞️"],["car","سيارة","Transportation","🚗"],["bus","حافلة","Transportation","🚌"],["book","كتاب","School","📕"],["pen","قلم","School","🖊️"],["phone","هاتف","Technology","📱"],["computer","كمبيوتر","Technology","💻"],["money","نقود","Money","💰"],["time","وقت","Time","⏰"],["day","يوم","Time","☀️"],["music","موسيقى","Entertainment","🎵"],["movie","فيلم","Entertainment","🎬"]];
-var S={learned:new Set(JSON.parse(localStorage.getItem('l')||'[]')),saved:new Set(JSON.parse(localStorage.getItem('v')||'[]')),theme:localStorage.getItem('t')||'light',lang:localStorage.getItem('g')||'ar',rate:0.9,pitch:1};
-var N=W.map(function(w,i){return{id:i,word:w[0],arabic:w[1],category:w[2],emoji:w[3]}});
-function T(k){var d={ar:{ht:'📚 My Nouns',hs:'تعلم الأسماء الإنجليزية',s1:'الكل',s2:'تعلمت',s3:'محفوظة',pl:'التقدم',b1:'ابدأ التعلم',b2:'بحث',ts:'الكلمات المحفوظة',tp:'التقدم',tse:'بحث',nh:'الرئيسية',nl:'تعلم',nv:'محفوظة',np:'تقدمي',ls:'استمع',mk1:'أعرفها',mk2:'راجعها',mk3:'التالي',mv:'حفظ',mp:'نطق',le:'أكملت جميع الكلمات!',ph:'ابحث بالعربية أو الإنجليزية...'},en:{ht:'📚 My Nouns',hs:'Learn English Nouns',s1:'Total',s2:'Learned',s3:'Saved',pl:'Progress',b1:'Start Learning',b2:'Search',ts:'Saved Words',tp:'Progress',tse:'Search',nh:'Home',nl:'Learn',nv:'Saved',np:'Progress',ls:'Listen',mk1:'I Know',mk2:'Review',mk3:'Next',mv:'Save',mp:'Pronounce',le:'All done!',ph:'Search...'}};return(d[S.lang]||d.ar)[k]||k}
-function save(){localStorage.setItem('l',JSON.stringify([...S.learned]));localStorage.setItem('v',JSON.stringify([...S.saved]));localStorage.setItem('t',S.theme);localStorage.setItem('g',S.lang)}
-function toast(m,c){var el=document.getElementById('toast');el.textContent=m;el.className='toast show '+(c||'');setTimeout(function(){el.className='toast '+(c||'')},1800)}
-function go(s){document.querySelectorAll('#wrap>section').forEach(function(x){x.classList.add('hide')});var el=document.getElementById(s);if(el)el.classList.remove('hide');document.querySelectorAll('.nav button').forEach(function(b){b.classList.toggle('on',b.dataset.s===s)});if(s==='home')rh();if(s==='saved')rs();if(s==='progress')rp();if(s==='search')dS()}
-function rh(){document.getElementById('s1').textContent=N.length;document.getElementById('s2').textContent=S.learned.size;document.getElementById('s3').textContent=S.saved.size;var p=N.length?Math.round(S.learned.size/N.length*100):0;document.getElementById('pc').textContent=p+'%';document.getElementById('pf').style.width=p+'%';document.getElementById('pt').textContent=S.learned.size+' / '+N.length}
-var q=[],qi=0;
-function learn(){q=N.filter(function(n){return!S.learned.has(n.id)}).map(function(n){return n.id});if(!q.length)q=N.map(function(n){return n.id});for(var i=q.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=q[i];q[i]=q[j];q[j]=t}qi=0;go('learn');sw()}
-function sw(){if(qi>=q.length){document.getElementById('lempty').classList.remove('hide');document.getElementById('lbody').classList.add('hide');return}document.getElementById('lempty').classList.add('hide');document.getElementById('lbody').classList.remove('hide');var n=N[q[qi]];document.getElementById('le2').textContent=n.emoji;document.getElementById('lw').textContent=n.word;document.getElementById('la').textContent=n.arabic;document.getElementById('lc').textContent=n.category;document.getElementById('ll').textContent='L1';document.getElementById('lx').textContent='Example: This is a '+n.word+'.';document.getElementById('sb').style.background=S.saved.has(n.id)?'#F59E0B':'';document.getElementById('sb').style.color=S.saved.has(n.id)?'#fff':''}
-function nw(){qi++;sw()}
-function sL(){var n=N[q[qi]];if(n)say(n.word)}
-function say(t,r){if(!window.speechSynthesis)return;speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=r||0.9;u.pitch=S.pitch;var vs=speechSynthesis.getVoices();var v=vs.find(function(x){return x.lang==='en-US'&&x.name.indexOf('Google')>-1})||vs.find(function(x){return x.lang==='en-US'});if(v)u.voice=v;speechSynthesis.speak(u)}
-function mark(t){var n=N[q[qi]];if(!n)return;if(t==='learned'){if(!S.learned.has(n.id))S.learned.add(n.id);toast('أحسنت! ✓','ok')}else{toast('سنراجعها لاحقاً')}save();rh();nw()}
-function tS(){var n=N[q[qi]];if(!n)return;if(S.saved.has(n.id)){S.saved.delete(n.id);toast('تم إلغاء الحفظ')}else{S.saved.add(n.id);toast('تم الحفظ ⭐','ok')}save();sw()}
-function rs(){var el=document.getElementById('sl');var ids=[...S.saved];if(!ids.length){el.innerHTML='<div style="text-align:center;padding:30px;color:var(--tx2)">لا توجد كلمات محفوظة</div>';return}el.innerHTML=ids.map(function(i){return ri(N[i])}).join('')}
-function ri(n){if(!n)return'';var m=(S.learned.has(n.id)?'✅':'')+(S.saved.has(n.id)?'⭐':'');return'<div class="item" onclick="say(\''+n.word+'\')"><div class="em">'+n.emoji+'</div><div class="inf"><div class="e">'+n.word+'</div><div class="a">'+n.arabic+'</div></div><div>'+m+'</div></div>'}
-function rp(){var t=N.length,l=S.learned.size,r=t-l,p=t?Math.round(l/t*100):0;var h='<div class="card"><div style="display:flex;justify-content:space-between;font-size:13px;font-weight:700"><span>'+T('pl')+'</span><span>'+p+'%</span></div><div class="progress"><div style="width:'+p+'%"></div></div></div>';h+='<div class="card"><b style="font-size:24px;color:#4F46E5">'+t+'</b><div style="font-size:12px;color:var(--tx2)">Total</div></div>';h+='<div class="card"><b style="font-size:24px;color:#10B981">'+l+'</b><div style="font-size:12px;color:var(--tx2)">Learned</div></div>';h+='<div class="card"><b style="font-size:24px;color:#F59E0B">'+r+'</b><div style="font-size:12px;color:var(--tx2)">Remaining</div></div>';h+='<div class="card"><b style="font-size:24px;color:#7C3AED">'+S.saved.size+'</b><div style="font-size:12px;color:var(--tx2)">Saved</div></div>';document.getElementById('pr').innerHTML=h}
-function dS(){var v=(document.getElementById('sq').value||'').toLowerCase();var r=N.filter(function(n){return n.word.toLowerCase().indexOf(v)>-1||n.arabic.indexOf(v)>-1});var el=document.getElementById('sr');if(!r.length){el.innerHTML='<div style="text-align:center;padding:30px;color:var(--tx2)">لا توجد نتائج</div>';return}el.innerHTML=r.slice(0,100).map(function(n){return ri(n)}).join('')}
-function apply(){document.documentElement.setAttribute('class',S.theme==='dark'?'dark':'');document.documentElement.dir=S.lang==='ar'?'rtl':'ltr';document.getElementById('th').textContent=S.theme==='dark'?'☀️':'🌙';document.getElementById('lg').textContent=S.lang==='ar'?'EN':'ع';['ht','hs','s1','s2','s3','pl','b1','b2','ts','tp','tse','nh','nl','nv','np','ls','mk1','mk2','mk3','mv','mp','le'].forEach(function(k){var el=document.getElementById(k);if(el)el.textContent=T(k)});document.getElementById('sq').placeholder=T('ph')}
-document.getElementById('th').onclick=function(){S.theme=S.theme==='dark'?'light':'dark';apply();save()};
-document.getElementById('lg').onclick=function(){S.lang=S.lang==='ar'?'en':'ar';apply();save();rh()};
-apply();rh();
-</script></body></html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#2563EB"><title>My Nouns</title><style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{--p:#2563EB;--p2:#1E40AF;--bg:#F5F7FB;--card:#FFF;--tx:#0F172A;--tx2:#64748B;--bd:#E2E8F0;--ok:#10B981;--warn:#F59E0B;--red:#EF4444;--sh:0 2px 12px rgba(15,23,42,.06)}
+.dark{--bg:#0F172A;--card:#1E293B;--tx:#F1F5F9;--tx2:#94A3B8;--bd:#334155;--sh:0 2px 12px rgba(0,0,0,.3)}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--tx);overflow:hidden;transition:.2s}
+#app{position:fixed;inset:0;display:flex;flex-direction:column;max-width:520px;margin:0 auto;background:var(--bg)}
+.hd{background:var(--card);padding:14px 18px;padding-top:max(14px,env(safe-area-inset-top));display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--bd)}
+.hd h1{flex:1;font-size:18px;font-weight:800;line-height:1.2}
+.hd h1 small{display:block;font-size:11px;color:var(--tx2);font-weight:500}
+.hd .flag{font-size:20px}
+.hd button{background:transparent;border:0;color:var(--tx);width:36px;height:36px;border-radius:10px;font-size:18px;cursor:pointer}
+.sc{flex:1;overflow-y:auto;padding:16px;padding-bottom:90px}
+.sc::-webkit-scrollbar{width:0}
+.sv{display:none}.sv.on{display:block}
+.hero{background:linear-gradient(135deg,#2563EB,#4F46E5);color:#fff;border-radius:18px;padding:20px;margin-bottom:16px;display:flex;align-items:center;gap:14px}
+.hero .ico{font-size:42px}
+.hero h2{font-size:17px;font-weight:800;margin-bottom:4px}
+.hero p{font-size:12px;opacity:.9}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.card{background:var(--card);border-radius:16px;padding:16px;box-shadow:var(--sh)}
+.card.c{text-align:center}
+.card .ico{font-size:32px;margin-bottom:8px}
+.card .num{font-size:22px;font-weight:800;color:var(--p)}
+.card .lbl{font-size:12px;color:var(--tx2);margin-top:2px}
+.card .lbl2{font-size:11px;color:var(--tx2)}
+.addcard{background:var(--card);border-radius:16px;padding:16px;text-align:center;border:2px dashed var(--bd);cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.addcard .plus{font-size:28px;color:var(--p);font-weight:300}
+.addcard .txt{font-size:12px;font-weight:700}
+.addcard .sub{font-size:10px;color:var(--tx2)}
+.sec{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.sec h3{font-size:15px;font-weight:800}
+.sec a{font-size:12px;color:var(--p);text-decoration:none;font-weight:700}
+.mini{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px}
+.mini::-webkit-scrollbar{display:none}
+.mini .m{flex-shrink:0;width:90px;background:var(--card);border-radius:14px;padding:12px 8px;text-align:center;cursor:pointer;box-shadow:var(--sh)}
+.mini .m .em{font-size:34px;margin-bottom:4px}
+.mini .m .w{font-size:12px;font-weight:700;direction:ltr}
+.mini .m .a{font-size:10px;color:var(--tx2)}
+.search{width:100%;padding:12px 14px 12px 40px;border:2px solid var(--bd);border-radius:12px;font-size:14px;background:var(--card);color:var(--tx);outline:0;font-family:inherit;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2'><circle cx='11' cy='11' r='8'/><path d='m21 21-4.35-4.35'/></svg>");background-repeat:no-repeat;background-position:12px center}
+.search:focus{border-color:var(--p)}
+.sortrow{display:flex;justify-content:space-between;align-items:center;margin:10px 0;font-size:12px;color:var(--tx2)}
+.sortrow b{color:var(--tx)}
+.item{background:var(--card);border-radius:14px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer;box-shadow:var(--sh)}
+.item .em{font-size:32px;flex-shrink:0}
+.item .info{flex:1;min-width:0}
+.item .info .w{font-size:15px;font-weight:700;direction:ltr;text-align:start}
+.item .info .a{font-size:12px;color:var(--tx2);margin-top:2px}
+.item .act{display:flex;gap:8px;flex-shrink:0}
+.item .act button{background:transparent;border:0;font-size:18px;cursor:pointer;color:var(--tx2);padding:4px;width:32px;height:32px}
+.item .act button.on{color:var(--warn)}
+.item .arr{color:var(--tx2);font-size:16px}
+.back{background:var(--card);border:0;color:var(--tx);font-size:16px;cursor:pointer;padding:8px;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.detail-em{background:linear-gradient(135deg,#DBEAFE,#BFDBFE);border-radius:20px;text-align:center;padding:36px 0;font-size:110px;margin-bottom:16px}
+.dark .detail-em{background:linear-gradient(135deg,#1E3A8A,#312E81)}
+.detail-w{font-size:30px;font-weight:800;color:var(--p);text-align:center;direction:ltr;margin-bottom:6px}
+.detail-a{font-size:22px;font-weight:700;text-align:center;margin-bottom:16px}
+.pron{background:var(--card);border-radius:12px;padding:12px;display:flex;align-items:center;gap:12px;margin-bottom:12px;border:1px solid var(--bd)}
+.pron .flag{font-size:22px}
+.pron .info{flex:1}
+.pron .info b{font-size:11px;color:var(--tx2);display:block}
+.pron .info span{font-size:14px;font-weight:600;direction:ltr}
+.pron button{background:var(--p);border:0;color:#fff;width:42px;height:42px;border-radius:50%;font-size:18px;cursor:pointer;box-shadow:0 3px 10px rgba(37,99,235,.4)}
+.ex{background:var(--card);border-radius:12px;padding:14px;margin-bottom:12px;border:1px solid var(--bd)}
+.ex .lbl{font-size:11px;color:var(--tx2);margin-bottom:6px;font-weight:700}
+.ex .en{font-size:15px;font-style:italic;direction:ltr;text-align:start;margin-bottom:6px}
+.ex .ar{font-size:13px;color:var(--tx2)}
+.bigbtn{width:100%;padding:14px;border:0;border-radius:14px;background:var(--p);color:#fff;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:10px}
+.bigbtn.ghost{background:var(--card);color:var(--p);border:2px solid var(--p)}
+.bigbtn.warn{background:var(--warn)}
+.bigbtn.ok{background:var(--ok)}
+.bigbtn:active{transform:scale(.97)}
+.empty{text-align:center;padding:60px 20px;color:var(--tx2)}
+.empty .ico{font-size:70px;color:#BFDBFE;margin-bottom:16px}
+.empty h3{color:var(--tx);font-size:17px;margin-bottom:8px;font-weight:800}
+.empty p{font-size:13px;line-height:1.6}
+.empty .star{color:var(--warn)}
+.ai-welcome{text-align:center;padding:20px}
+.ai-welcome .bot{font-size:80px;margin-bottom:16px}
+.ai-welcome h2{font-size:18px;font-weight:800;margin-bottom:4px}
+.ai-welcome .sub{font-size:12px;color:var(--tx2);margin-bottom:20px}
+.ai-welcome .greet{background:var(--card);border-radius:16px;padding:16px;font-size:13px;color:var(--tx2);line-height:1.7;margin-bottom:16px;text-align:start;border:1px solid var(--bd)}
+.opt{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:10px;cursor:pointer;font-size:13px;font-weight:600;font-family:inherit;color:var(--tx);width:100%}
+.opt:hover{border-color:var(--p)}
+.opt .i{font-size:18px}
+.opt .t{flex:1;text-align:start}
+.opt .c{color:var(--tx2)}
+.chat-hd{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--card);border-bottom:1px solid var(--bd)}
+.chat-hd .av{font-size:24px}
+.chat-hd .info{flex:1}
+.chat-hd .info b{font-size:14px;display:block}
+.chat-hd .info small{font-size:11px;color:var(--ok);display:flex;align-items:center;gap:4px}
+.chat-hd .info small::before{content:'';width:6px;height:6px;background:var(--ok);border-radius:50%}
+.msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.msgs::-webkit-scrollbar{width:0}
+.msg{max-width:82%;padding:12px 14px;border-radius:16px;font-size:14px;line-height:1.5;word-wrap:break-word}
+.msg.user{background:var(--p);color:#fff;align-self:flex-start;border-bottom-right-radius:4px}
+.msg.ai{background:var(--card);border:1px solid var(--bd);align-self:flex-end;border-bottom-left-radius:4px}
+.msg small{display:block;font-size:10px;opacity:.6;margin-top:4px}
+.typing{display:flex;gap:4px;padding:12px 16px;background:var(--card);border:1px solid var(--bd);border-radius:16px;align-self:flex-end;width:fit-content}
+.typing span{width:8px;height:8px;background:var(--tx2);border-radius:50%;animation:typ 1.4s infinite}
+.typing span:nth-child(2){animation-delay:.2s}
+.typing span:nth-child(3){animation-delay:.4s}
+@keyframes typ{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
+.chat-in{padding:12px 16px;padding-bottom:max(12px,env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--bd);display:flex;gap:8px;align-items:center}
+.chat-in input{flex:1;padding:12px 16px;border:1px solid var(--bd);border-radius:24px;font-size:14px;background:var(--bg);color:var(--tx);outline:0;font-family:inherit}
+.chat-in button{width:44px;height:44px;border-radius:50%;border:0;background:var(--p);color:#fff;font-size:18px;cursor:pointer}
+.chat-actions{display:flex;gap:8px;padding:6px 16px;background:var(--card);border-top:1px solid var(--bd);font-size:11px}
+.chat-actions button{flex:1;background:transparent;border:0;color:var(--tx2);cursor:pointer;padding:6px;font-family:inherit;font-size:11px}
+.quiz-prog{height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin-bottom:16px}
+.quiz-prog>div{height:100%;background:var(--p);transition:width .3s}
+.quiz-q{background:var(--card);border-radius:16px;padding:24px;margin-bottom:16px;text-align:center;box-shadow:var(--sh)}
+.quiz-q .em{font-size:60px;margin-bottom:12px}
+.quiz-q h3{font-size:17px;font-weight:800}
+.quiz-q .sub{font-size:12px;color:var(--tx2);margin-top:6px}
+.qopt{background:var(--card);border:2px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;color:var(--tx);display:flex;align-items:center;gap:12px;width:100%}
+.qopt .num{width:32px;height:32px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.qopt .txt{flex:1;text-align:start}
+.qopt.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+.qopt.ok .num{background:rgba(255,255,255,.25);color:#fff}
+.qopt.bad{background:var(--red);color:#fff;border-color:var(--red)}
+.qopt.bad .num{background:rgba(255,255,255,.25);color:#fff}
+.nav{background:var(--card);border-top:1px solid var(--bd);display:flex;padding-bottom:max(8px,env(safe-area-inset-bottom))}
+.nav button{flex:1;background:0;border:0;padding:10px 4px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--tx2);font-size:10px;font-weight:700;font-family:inherit}
+.nav button .ic{font-size:22px}
+.nav button.on{color:var(--p)}
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(100px);background:#1F2937;color:#fff;padding:12px 20px;border-radius:12px;font-size:13px;font-weight:600;z-index:200;opacity:0;transition:.3s;max-width:88%}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.ok{background:var(--ok)}.toast.bad{background:var(--red)}
+</style></head><body>
+<div id="app">
+<div class="hd" id="hd"><h1>My Nouns <small>Learn English Nouns</small></h1><span class="flag">🇺🇸</span><button onclick="toggleDark()" id="dk">🌙</button><button onclick="toggleLang()" id="lg" style="font-size:12px;font-weight:700">EN</button></div>
+<div class="sc">
+
+<!-- HOME -->
+<section class="sv on" id="home">
+<div class="hero"><span class="ico">📖</span><div><h2 id="h1">تعلم الأسماء الإنجليزية بسهولة وفعالية</h2><p id="h2">أسماء جديدة، مستقبل أفضل</p></div></div>
+<div class="grid">
+<div class="card c" onclick="go('words')"><div class="ico">📚</div><div class="num" id="st1">50</div><div class="lbl" id="l1">إجمالي الكلمات</div><div class="lbl2">جميع الأسماء في التطبيق</div></div>
+<div class="card c" onclick="go('fav')"><div class="ico">⭐</div><div class="num" id="st2">0</div><div class="lbl" id="l2">المفضلة</div><div class="lbl2">كلمات محفوظة</div></div>
+<div class="card c" onclick="go('ai')"><div class="ico">🤖</div><div class="num" style="font-size:14px;color:var(--tx)">معلم الإنجليزية الذكي</div><div class="lbl2" id="l3">تحدث، اسأل، تعلم</div></div>
+<div class="card c addcard" onclick="go('words')"><div class="plus">+</div><div class="txt" id="l4">إضافة كلمة جديدة</div><div class="sub" id="l5">أضف كلماتك الخاصة</div></div>
+</div>
+<div class="sec"><h3 id="sec1">أحدث الكلمات</h3><a onclick="go('words')" id="sec2">عرض الكل ›</a></div>
+<div class="mini" id="recent"></div>
+</section>
+
+<!-- WORDS -->
+<section class="sv" id="words">
+<div class="sec"><h3 id="wt1">جميع الكلمات</h3><button style="background:var(--card);border:0;width:36px;height:36px;border-radius:10px;color:var(--tx);cursor:pointer;font-size:16px">+</button></div>
+<input class="search" id="sq" placeholder="ابحث بالإنجليزية أو العربية..." oninput="renderWords()">
+<div class="sortrow"><span id="wt2"><b id="wcnt">50</b> كلمة</span><span>ترتيب: <b>الأحدث</b></span></div>
+<div id="wlist"></div>
+</section>
+
+<!-- DETAIL -->
+<section class="sv" id="detail">
+<div class="sec"><button class="back" onclick="go('words')">→</button><div style="flex:1"></div></div>
+<div class="detail-em" id="dEm">📖</div>
+<div class="detail-w" id="dW">house</div>
+<div class="detail-a" id="dA">منزل</div>
+<div class="pron"><span class="flag">🇺🇸</span><div class="info"><b id="dP1">النطق الأمريكي</b><span id="dP2">/haʊs/</span></div><button onclick="say(currentWord.word)">🔊</button></div>
+<div class="ex"><div class="lbl" id="dE1">مثال</div><div class="en" id="dEx">This is my house.</div><div class="ar" id="dExAr">هذا منزلي.</div></div>
+<button class="bigbtn warn" id="dFav" onclick="toggleFav()">⭐ <span id="dF1">إضافة إلى المفضلة</span></button>
+<button class="bigbtn" onclick="go('words')" id="dBack">العودة إلى القائمة</button>
+</section>
+
+<!-- FAVORITES -->
+<section class="sv" id="fav">
+<div class="sec"><h3 id="ft">المفضلة</h3><button onclick="go('home')" class="back">→</button></div>
+<div id="flist"></div>
+</section>
+
+<!-- AI WELCOME -->
+<section class="sv" id="ai">
+<div class="ai-welcome">
+<div class="bot">🤖</div>
+<h2 id="at1">معلم الإنجليزية الذكي</h2>
+<div class="sub" id="at2">دائماً معك في رحلتك التعليمية</div>
+<div class="greet" id="at3">مرحباً! أنا معلمك الذكي في اللغة الإنجليزية. يمكنك أن تسألني أي سؤال عن الأسماء، أو تطلب مني أمثلة أو تدريب، أو محادثة.</div>
+<button class="opt" onclick="startAIChat('اشرح معنى كلمة house')"><span class="i">💡</span><span class="t" id="o1">اشرح معنى كلمة</span><span class="c">›</span></button>
+<button class="opt" onclick="startAIChat('أعطني مثالاً على كلمة house')"><span class="i">📝</span><span class="t" id="o2">أعطني مثالاً على كلمة</span><span class="c">›</span></button>
+<button class="opt" onclick="startAIChat('اختبرني في الكلمات')"><span class="i">🎯</span><span class="t" id="o3">اختبرني في الكلمات</span><span class="c">›</span></button>
+<button class="opt" onclick="startAIChat('محادثة باللغة الإنجليزية')"><span class="i">💬</span><span class="t" id="o4">محادثة باللغة الإنجليزية</span><span class="c">›</span></button>
+<button class="bigbtn" onclick="startAIChat('')" id="o5">💬 ابدأ المحادثة</button>
+</div>
+</section>
+
+<!-- CHAT -->
+<section class="sv" id="chat" style="display:none;flex-direction:column">
+<div class="chat-hd"><button class="back" onclick="go('ai')">→</button><span class="av">🤖</span><div class="info"><b id="ct1">معلم الإنجليزية الذكي</b><small id="ct2">متصل الآن</small></div></div>
+<div class="msgs" id="msgs"></div>
+<div class="chat-actions"><button onclick="clearChat()" id="ca1">🗑️ مسح المحادثة</button><button onclick="go('quiz')" id="ca2">🎯 اختبرني</button></div>
+<div class="chat-in"><input id="ci" placeholder="اكتب رسالتك..." onkeypress="if(event.key==='Enter')sendMsg()"><button onclick="sendMsg()">➤</button></div>
+</section>
+
+<!-- QUIZ -->
+<section class="sv" id="quiz">
+<div class="sec"><button class="back" onclick="go('home')">→</button><h3 style="flex:1;text-align:center" id="qt1">اختبار تفاعلي</h3><div style="width:36px"></div></div>
+<div class="quiz-prog"><div id="qp" style="width:20%"></div></div>
+<div class="quiz-q"><div class="em" id="qEm">🚗</div><h3 id="qQ">What is the meaning of car?</h3><div class="sub" id="qP">1/5</div></div>
+<div id="qopts"></div>
+<button class="bigbtn" id="qNext" onclick="nextQuiz()" style="margin-top:16px" disabled>التالي</button>
+</section>
+
+</div>
+<nav class="nav">
+<button class="on" data-s="home" onclick="go('home')"><span class="ic">🏠</span><span id="n1">الرئيسية</span></button>
+<button data-s="words" onclick="go('words')"><span class="ic">📚</span><span id="n2">جميع الكلمات</span></button>
+<button data-s="fav" onclick="go('fav')"><span class="ic">⭐</span><span id="n3">المفضلة</span></button>
+<button data-s="ai" onclick="go('ai')"><span class="ic">🤖</span><span id="n4">AI</span></button>
+</nav>
+</div>
+<div class="toast" id="toast"></div>
+<script src="https://js.puter.com/v2/"></script>
+<script>
+var W=[["house","منزل","Home","🏠"],["car","سيارة","Transport","🚗"],["book","كتاب","Education","📖"],["phone","هاتف","Tech","📱"],["table","طاولة","Furniture","🪑"],["chair","كرسي","Furniture","💺"],["dog","كلب","Animals","🐕"],["cat","قطة","Animals","🐈"],["apple","تفاحة","Food","🍎"],["banana","موزة","Food","🍌"],["bread","خبز","Food","🍞"],["water","ماء","Drinks","💧"],["coffee","قهوة","Drinks","☕"],["tea","شاي","Drinks","🍵"],["sun","شمس","Nature","☀️"],["moon","قمر","Nature","🌙"],["star","نجمة","Nature","⭐"],["tree","شجرة","Nature","🌳"],["flower","زهرة","Nature","🌸"],["rain","مطر","Nature","🌧️"],["snow","ثلج","Nature","❄️"],["fire","نار","Nature","🔥"],["computer","كمبيوتر","Tech","💻"],["laptop","حاسوب محمول","Tech","💻"],["camera","كاميرا","Tech","📷"],["television","تلفاز","Tech","📺"],["radio","راديو","Tech","📻"],["key","مفتاح","Home","🔑"],["door","باب","Home","🚪"],["window","نافذة","Home","🪟"],["lamp","مصباح","Home","💡"],["mirror","مرآة","Home","🪞"],["bed","سرير","Home","🛏️"],["sofa","أريكة","Furniture","🛋️"],["desk","مكتب","Furniture","🪑"],["shirt","قميص","Clothes","👕"],["shoes","أحذية","Clothes","👟"],["hat","قبعة","Clothes","🎩"],["dress","فستان","Clothes","👗"],["watch","ساعة","Clothes","⌚"],["man","رجل","People","👨"],["woman","امرأة","People","👩"],["boy","ولد","People","👦"],["girl","بنت","People","👧"],["baby","طفل","People","👶"],["friend","صديق","People","👫"],["family","عائلة","People","👨‍👩‍👧"],["teacher","معلم","People","👨‍🏫"],["doctor","طبيب","People","👨‍⚕️"],["police","شرطة","People","👮"],["city","مدينة","Places","🏙️"],["park","حديقة","Places","🏞️"],["school","مدرسة","Places","🏫"],["hospital","مستشفى","Places","🏥"],["library","مكتبة","Places","📚"],["money","نقود","Money","💰"],["time","وقت","Time","⏰"],["day","يوم","Time","☀️"],["music","موسيقى","Entertainment","🎵"],["movie","فيلم","Entertainment","🎬"],["game","لعبة","Entertainment","🎮"],["ball","كرة","Sports","⚽"],["food","طعام","Food","🍔"],["fish","سمك","Food","🐟"],["egg","بيضة","Food","🥚"],["milk","حليب","Drinks","🥛"],["juice","عصير","Drinks","🧃"],["bike","دراجة","Transport","🚲"],["bus","حافلة","Transport","🚌"],["train","قطار","Transport","🚂"],["plane","طائرة","Transport","✈️"],["boat","قارب","Transport","⛵"],["taxi","تاكسي","Transport","🚕"],["horse","حصان","Animals","🐎"],["lion","أسد","Animals","🦁"],["tiger","نمر","Animals","🐯"],["elephant","فيل","Animals","🐘"],["bird","طائر","Animals","🐦"],["bee","نحلة","Animals","🐝"],["head","رأس","Body","🧠"],["eye","عين","Body","👁️"],["hand","يد","Body","✋"],["heart","قلب","Body","❤️"],["phone2","","",""]];
+W=W.filter(function(x){return x[0]!=='phone2'});
+var S={fav:new Set(JSON.parse(localStorage.getItem('mn_f')||'[]')),theme:localStorage.getItem('mn_t')||'light',lang:localStorage.getItem('mn_l')||'ar',learned:new Set(JSO
